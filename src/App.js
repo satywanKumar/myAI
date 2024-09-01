@@ -15,6 +15,7 @@ function App() {
     .then(res=>{
       console.log(res.data.response);
       setResponse(res.data.response);
+      setQuestion('');
     })
     .catch(err=>{
       console.log(err)
