@@ -1,38 +1,87 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  height: 100vh;
+  width: 100%;
   background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.box
+{
+  width: 50%;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap:50px;
+}
+
+.profile-pic
+{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* box-shadow: 5px 5px 10px royalblue; */
+  overflow: hidden;
+  animation:myAnimation 3s infinite;
+}
+
+@keyframes myAnimation {
+  0%{box-shadow: 5px 5px 10px royalblue;}
+  33%{box-shadow: 5px 5px 10px rgb(229, 12, 12);}
+  66%{box-shadow: 5px 5px 10px rgb(12, 231, 9);}
+  100%{box-shadow: 5px 5px 10px royalblue;}
+}
+
+textarea
+{
+  width: 80%;
+  height: 300px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px white;
+  background-color: transparent;
   color: white;
+  padding: 20px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+textarea::-webkit-scrollbar
+{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button
+{
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
+button:hover
+{
+  box-shadow: 5px 5px 10px white;
+}
+
+.pic
+{
+  width: 200px;
+  height: 200px;
+  
+}
+
+.label
+{
+  color: rgb(109, 226, 250);
+  font-size: 20px;
+}
+
