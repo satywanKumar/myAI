@@ -34,7 +34,7 @@ function App() {
           <img className='pic' alt='profile pic' src={require('../src/assets/satya.png')}/>
         </div>
         <p className='label'>SBS Online Classes</p>
-       <textarea onChange={(e)=>{setQuestion(e.target.value)}}/>
+       <textarea value={question} onChange={(e)=>{setQuestion(e.target.value)}}/>
        <button onClick={submitHandler}>Send</button>
       </div>
       <div className='box'>
